@@ -39,3 +39,9 @@ function calculatePnL(boughtPrice, boughtQuantity, curPrice) {
 
 
 }
+
+
+function showOutput(data,color){
+    output.innerHTML=data;
+    output.style.color=color;
+}
