@@ -4,6 +4,19 @@ const currentPrice = document.querySelector("#current-price");
 const calculate = document.querySelector("#calculate");
 const output = document.querySelector("#output");
 
+calculate.addEventListener("click", () => {
+
+    let buyPriceValue = Number(buyPrice.value)
+    let currentPriceValue = Number(currentPrice.value)
+    let quantityOfStocks = Number(quantity.value)
+
+
+   let [data,color]= calculatePnL(buyPriceValue, quantityOfStocks, currentPriceValue)
+    //console.log(calculatePnL()) This is executing loss statement twice irrespective of what Pnl is
+    showOutput(data,color)
+
+})
+
 function calculatePnL(boughtPrice, boughtQuantity, curPrice) {
 
     let PnL;
