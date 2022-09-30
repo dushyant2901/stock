@@ -82,7 +82,7 @@ window.addEventListener("load", () => {
   hide([label[1], label[2], nxtBtn2, calculate, output]);
 });
 function clickHandler() {
-  if (validateInputs(inputs[2])) {
+  if (validateInputs(inputs[2].value)) {
     let buyPriceValue = Number(buyPrice.value);
     let currentPriceValue = Number(currentPrice.value);
     let quantityOfStocks = Number(quantity.value);
