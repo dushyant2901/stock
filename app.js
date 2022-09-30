@@ -34,8 +34,8 @@ nxtBtn1.addEventListener("click", () => {
     show([label[1], nxtBtn2]);
     hide([nxtBtn1, output]);
   } else {
-    show([output]);
     output.textContent = `Input Amount should be greater than or equal to zero`;
+    show([output]);
   }
 });
 nxtBtn2.addEventListener("click", () => {
