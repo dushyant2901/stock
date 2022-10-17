@@ -16,7 +16,7 @@ body {
   align-items: center;
 }
 .container {
-  width: 60%;
+  width: 50%;
   height: 90%;
 
   display: flex;
@@ -26,9 +26,9 @@ body {
 }
 .wrapper {
   width: 100%;
-
+  border-radius: 2rem;
   background-color: beige;
-
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,23 +91,6 @@ input {
   margin: 1rem;
   font-size: 1.3rem;
 }
-footer {
-  width: 100vw;
-  height: 10vh;
-  background-color: beige;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-footer ul {
-  display: flex;
-  gap: 5rem;
-  list-style: none;
-}
-footer ul a {
-  text-decoration: none;
-  font-size: 1.5rem;
-}
 
 .social-icon {
   height: 35px;
@@ -119,8 +102,9 @@ footer ul a {
 }
 
 .footer {
-  background-color: var(--primary-color);
-  padding: 1.5rem 1rem;
+  width: 100vw;
+  background-color: beige;
+  padding: 1rem 1rem;
   text-align: center;
   color: var(--primary-green);
   border-top-right-radius: 1rem;
